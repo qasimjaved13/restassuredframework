@@ -1,5 +1,6 @@
-package rdm;
+package Testcases;
 
+import Base.baseClass;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
@@ -9,15 +10,16 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+
 import java.io.IOException;
 
-public class CreateNewUserAPI {
+public class CreateNewUserAPI extends baseClass {
 
     @DataProvider(name = "userdataprovide")
     String[][] GetUsersdata() throws IOException {
 
         //Read data from Excel
-        String excelpath = System.getProperty("user.dir") + "/src/test/java/rdm/testdata.xlsx";
+        String excelpath = super.testdatafilepath;
         int rowNUM = XLUtils.getRowCount(excelpath, "Sheet1");
         int colCount = XLUtils.getCellCount(excelpath, "Sheet1", 1);
 

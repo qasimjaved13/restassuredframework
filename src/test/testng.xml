@@ -4,10 +4,11 @@
 
     <test name="Complete test run">
         <classes>
-            <class name="rdm.CreateNewUserAPI"></class>
-            <class name="rdm.GetSingleUserAPI"></class>
-            <class name="rdm.UpdateRecordAPI"></class>
-            <class name="rdm.DeleteRecordAPI"></class>
+            <class name="Testcases.CreateNewUserAPI"></class>
+            <class name="Testcases.GetSingleUserAPI"></class>
+            <class name="Testcases.UpdateRecordAPI"></class>
+            <class name="Testcases.DeleteRecordAPI"></class>
+            <class name="Testcases.PassingJSON"></class>
         </classes>
     </test>
 

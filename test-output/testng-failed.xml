@@ -3,11 +3,11 @@
 <suite configfailurepolicy="continue" parallel="tests" name="Failed suite [APITests]" guice-stage="DEVELOPMENT" verbose="10">
   <test thread-count="5" parallel="tests" name="Complete test run(failed)" verbose="10">
     <classes>
-      <class name="rdm.GetSingleUserAPI">
+      <class name="Testcases.GetSingleUserAPI">
         <methods>
           <include name="GetsingleUserAPI" invocation-numbers="4"/>
         </methods>
-      </class> <!-- rdm.GetSingleUserAPI -->
+      </class> <!-- Testcases.GetSingleUserAPI -->
     </classes>
   </test> <!-- Complete test run(failed) -->
 </suite> <!-- Failed suite [APITests] -->

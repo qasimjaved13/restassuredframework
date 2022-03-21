@@ -1,37 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-18T15:53:01 PKT" name="APITests" finished-at="2022-03-18T15:53:21 PKT" duration-ms="20559">
+  <suite started-at="2022-03-21T12:20:41 PKT" name="APITests" finished-at="2022-03-21T12:21:02 PKT" duration-ms="20838">
     <groups>
     </groups>
-    <test started-at="2022-03-18T15:53:01 PKT" name="Complete test run" finished-at="2022-03-18T15:53:21 PKT" duration-ms="20559">
-      <class name="rdm.DeleteRecordAPI">
-        <test-method signature="DeleteUser(java.lang.String)[pri:0, instance:rdm.DeleteRecordAPI@55fe41ea]" started-at="2022-03-18T15:53:19 PKT" name="DeleteUser" data-provider="GetUserID" finished-at="2022-03-18T15:53:20 PKT" duration-ms="1214" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteUser -->
-        <test-method signature="DeleteUser(java.lang.String)[pri:0, instance:rdm.DeleteRecordAPI@55fe41ea]" started-at="2022-03-18T15:53:20 PKT" name="DeleteUser" data-provider="GetUserID" finished-at="2022-03-18T15:53:21 PKT" duration-ms="1326" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteUser -->
-      </class> <!-- rdm.DeleteRecordAPI -->
-      <class name="rdm.UpdateRecordAPI">
-        <test-method signature="UpdateUserRecordAPI(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:rdm.UpdateRecordAPI@1c1bbc4e]" started-at="2022-03-18T15:53:16 PKT" name="UpdateUserRecordAPI" data-provider="updatedata" finished-at="2022-03-18T15:53:17 PKT" duration-ms="1235" status="PASS">
+    <test started-at="2022-03-21T12:20:41 PKT" name="Complete test run" finished-at="2022-03-21T12:21:02 PKT" duration-ms="20838">
+      <class name="Testcases.UpdateRecordAPI">
+        <test-method signature="UpdateUserRecordAPI(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.UpdateRecordAPI@279fedbd]" started-at="2022-03-21T12:20:56 PKT" name="UpdateUserRecordAPI" data-provider="updatedata" finished-at="2022-03-21T12:20:57 PKT" duration-ms="1140" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +28,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateUserRecordAPI -->
-        <test-method signature="UpdateUserRecordAPI(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:rdm.UpdateRecordAPI@1c1bbc4e]" started-at="2022-03-18T15:53:17 PKT" name="UpdateUserRecordAPI" data-provider="updatedata" finished-at="2022-03-18T15:53:19 PKT" duration-ms="1790" status="PASS">
+        <test-method signature="UpdateUserRecordAPI(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.UpdateRecordAPI@279fedbd]" started-at="2022-03-21T12:20:57 PKT" name="UpdateUserRecordAPI" data-provider="updatedata" finished-at="2022-03-21T12:20:58 PKT" duration-ms="764" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -73,9 +49,131 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateUserRecordAPI -->
-      </class> <!-- rdm.UpdateRecordAPI -->
-      <class name="rdm.GetSingleUserAPI">
-        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:rdm.GetSingleUserAPI@ba2f4ec]" started-at="2022-03-18T15:53:10 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-18T15:53:11 PKT" duration-ms="871" status="PASS">
+      </class> <!-- Testcases.UpdateRecordAPI -->
+      <class name="Testcases.PassingJSON">
+        <test-method signature="CreateUserAPI(java.lang.String)[pri:0, instance:Testcases.PassingJSON@45c7e403]" started-at="2022-03-21T12:21:01 PKT" name="CreateUserAPI" data-provider="userdataprovide" finished-at="2022-03-21T12:21:02 PKT" duration-ms="1018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{
+    "name": "morpheus",
+    "job": "leader"
+}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUserAPI -->
+      </class> <!-- Testcases.PassingJSON -->
+      <class name="Testcases.DeleteRecordAPI">
+        <test-method signature="DeleteUser(java.lang.String)[pri:0, instance:Testcases.DeleteRecordAPI@b3ca52e]" started-at="2022-03-21T12:20:58 PKT" name="DeleteUser" data-provider="GetUserID" finished-at="2022-03-21T12:20:59 PKT" duration-ms="758" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUser -->
+        <test-method signature="DeleteUser(java.lang.String)[pri:0, instance:Testcases.DeleteRecordAPI@b3ca52e]" started-at="2022-03-21T12:20:59 PKT" name="DeleteUser" data-provider="GetUserID" finished-at="2022-03-21T12:21:01 PKT" duration-ms="1997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUser -->
+      </class> <!-- Testcases.DeleteRecordAPI -->
+      <class name="Testcases.CreateNewUserAPI">
+        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:Testcases.CreateNewUserAPI@179ece50]" started-at="2022-03-21T12:20:42 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-21T12:20:45 PKT" duration-ms="2960" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SQA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewUserAPI -->
+        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:Testcases.CreateNewUserAPI@179ece50]" started-at="2022-03-21T12:20:45 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-21T12:20:46 PKT" duration-ms="869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[DBA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewUserAPI -->
+        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:Testcases.CreateNewUserAPI@179ece50]" started-at="2022-03-21T12:20:46 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-21T12:20:47 PKT" duration-ms="985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[PM]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewUserAPI -->
+        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:Testcases.CreateNewUserAPI@179ece50]" started-at="2022-03-21T12:20:47 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-21T12:20:48 PKT" duration-ms="1167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Developer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewUserAPI -->
+        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:Testcases.CreateNewUserAPI@179ece50]" started-at="2022-03-21T12:20:48 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-21T12:20:49 PKT" duration-ms="1599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Architect]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewUserAPI -->
+      </class> <!-- Testcases.CreateNewUserAPI -->
+      <class name="Testcases.GetSingleUserAPI">
+        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:Testcases.GetSingleUserAPI@752325ad]" started-at="2022-03-21T12:20:50 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-21T12:20:50 PKT" duration-ms="781" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,7 +184,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetsingleUserAPI -->
-        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:rdm.GetSingleUserAPI@ba2f4ec]" started-at="2022-03-18T15:53:11 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-18T15:53:12 PKT" duration-ms="936" status="PASS">
+        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:Testcases.GetSingleUserAPI@752325ad]" started-at="2022-03-21T12:20:50 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-21T12:20:52 PKT" duration-ms="1298" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,7 +195,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetsingleUserAPI -->
-        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:rdm.GetSingleUserAPI@ba2f4ec]" started-at="2022-03-18T15:53:12 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-18T15:53:13 PKT" duration-ms="838" status="PASS">
+        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:Testcases.GetSingleUserAPI@752325ad]" started-at="2022-03-21T12:20:52 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-21T12:20:53 PKT" duration-ms="1271" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -108,7 +206,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetsingleUserAPI -->
-        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:rdm.GetSingleUserAPI@ba2f4ec]" started-at="2022-03-18T15:53:13 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-18T15:53:14 PKT" duration-ms="913" status="PASS">
+        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:Testcases.GetSingleUserAPI@752325ad]" started-at="2022-03-21T12:20:53 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-21T12:20:54 PKT" duration-ms="1407" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,7 +217,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetsingleUserAPI -->
-        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:rdm.GetSingleUserAPI@ba2f4ec]" started-at="2022-03-18T15:53:14 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-18T15:53:15 PKT" duration-ms="1538" status="FAIL">
+        <test-method signature="GetsingleUserAPI(java.lang.String)[pri:0, instance:Testcases.GetSingleUserAPI@752325ad]" started-at="2022-03-21T12:20:54 PKT" name="GetsingleUserAPI" data-provider="GetUserID" finished-at="2022-03-21T12:20:56 PKT" duration-ms="1330" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -139,7 +237,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:819)
 at org.testng.Assert.assertEquals(Assert.java:829)
-at rdm.GetSingleUserAPI.GetsingleUserAPI(GetSingleUserAPI.java:40)
+at Testcases.GetSingleUserAPI.GetsingleUserAPI(GetSingleUserAPI.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,89 +267,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetsingleUserAPI -->
-      </class> <!-- rdm.GetSingleUserAPI -->
-      <class name="rdm.CreateNewUserAPI">
-        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:rdm.CreateNewUserAPI@6743e411]" started-at="2022-03-18T15:53:02 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-18T15:53:05 PKT" duration-ms="2979" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[SQA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewUserAPI -->
-        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:rdm.CreateNewUserAPI@6743e411]" started-at="2022-03-18T15:53:05 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-18T15:53:06 PKT" duration-ms="1344" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[DBA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewUserAPI -->
-        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:rdm.CreateNewUserAPI@6743e411]" started-at="2022-03-18T15:53:06 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-18T15:53:08 PKT" duration-ms="1530" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[PM]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewUserAPI -->
-        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:rdm.CreateNewUserAPI@6743e411]" started-at="2022-03-18T15:53:08 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-18T15:53:09 PKT" duration-ms="1350" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test4]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Developer]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewUserAPI -->
-        <test-method signature="addNewUserAPI(java.lang.String,java.lang.String)[pri:0, instance:rdm.CreateNewUserAPI@6743e411]" started-at="2022-03-18T15:53:09 PKT" name="addNewUserAPI" data-provider="userdataprovide" finished-at="2022-03-18T15:53:10 PKT" duration-ms="1214" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Architect]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewUserAPI -->
-      </class> <!-- rdm.CreateNewUserAPI -->
+      </class> <!-- Testcases.GetSingleUserAPI -->
     </test> <!-- Complete test run -->
   </suite> <!-- APITests -->
 </testng-results>
