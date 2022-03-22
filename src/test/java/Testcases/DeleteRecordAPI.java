@@ -33,7 +33,7 @@ public class DeleteRecordAPI extends baseClass {
 
     @Test(dataProvider = "GetUserID")
     public void DeleteUser(String userid) {
-        RestAssured.baseURI = "https://reqres.in/api/";
+        RestAssured.baseURI = super.basepath;
         RequestSpecification httprequest = RestAssured.given();
         httprequest.header("Content-Type", "application/json");
         Response response = httprequest.request(Method.DELETE, "users/" + userid);

@@ -32,7 +32,7 @@ public class GetSingleUserAPI extends baseClass {
 
     @Test(dataProvider = "GetUserID")
     public void GetsingleUserAPI(String userid) {
-        RestAssured.baseURI = "https://reqres.in/api/";
+        RestAssured.baseURI = super.basepath;
         RequestSpecification httprequest = RestAssured.given();
         httprequest.header("Content-Type", "application/json");
         Response response = httprequest.request(Method.GET, "users/" + userid);

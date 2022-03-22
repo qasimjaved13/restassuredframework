@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" parallel="tests" name="Failed suite [APITests]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="tests" name="Complete test run(failed)" verbose="0">
+    <classes>
+      <class name="Testcases.GetSingleUserAPI">
+        <methods>
+          <include name="GetsingleUserAPI" invocation-numbers="4"/>
+        </methods>
+      </class> <!-- Testcases.GetSingleUserAPI -->
+    </classes>
+  </test> <!-- Complete test run(failed) -->
+</suite> <!-- Failed suite [APITests] -->

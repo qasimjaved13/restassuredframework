@@ -1,6 +1,9 @@
 package Testcases;
 
 import Base.baseClass;
+import POJO.payload;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
@@ -14,6 +17,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class CreateNewUserAPI extends baseClass {
+
 
     @DataProvider(name = "userdataprovide")
     String[][] GetUsersdata() throws IOException {
@@ -34,18 +38,27 @@ public class CreateNewUserAPI extends baseClass {
     }
 
     @Test(dataProvider = "userdataprovide")
-    public void addNewUserAPI(String fname, String job) {
-        RestAssured.baseURI = "https://reqres.in/api";
+    public void addNewUserAPI(String fname, String job) throws JsonProcessingException {
+
+        RestAssured.baseURI = super.basepath;
         RequestSpecification httprequest = RestAssured.given();
-        JSONObject requestparameters = new JSONObject();
-        requestparameters.put("Employee Name: ", fname);
-        requestparameters.put("Employee Job: ", job);
+        //JSONObject requestparameters = new JSONObject();
+        //requestparameters.put("Employee Name: ", fname);
+        //requestparameters.put("Employee Job: ", job);
 
         //Add the header stating the request body
         httprequest.header("Content-Type", "application/json");
 
+        //passing paylaod as object through POJO
+        payload p =new payload(fname,job);
+        ObjectMapper objmap = new ObjectMapper();
+        String mydata = objmap.writerWithDefaultPrettyPrinter().writeValueAsString(p);
+
+        System.out.println(mydata);
+
         //Add the JSON to the body of the request
-        httprequest.body(requestparameters.toJSONString());
+        //httprequest.body(requestparameters.toJSONString());
+        httprequest.body(p);
 
         //Post Request
         Response response = httprequest.request(Method.POST, "/users");
@@ -53,7 +66,7 @@ public class CreateNewUserAPI extends baseClass {
         //Capture response body to perform validations
         String responsebody = response.getBody().asString();
 
-        System.out.println("Response Body: " + responsebody);
+        //System.out.println("Response Body: " + responsebody);
 
         Assert.assertEquals(responsebody.contains(fname), true);
         Assert.assertEquals(responsebody.contains(job), true);

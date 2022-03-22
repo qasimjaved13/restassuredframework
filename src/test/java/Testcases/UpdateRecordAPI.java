@@ -34,7 +34,7 @@ public class UpdateRecordAPI extends baseClass {
 
     @Test(dataProvider = "updatedata")
     public void UpdateUserRecordAPI(String userid, String username, String job) {
-        RestAssured.baseURI = "https://reqres.in/api";
+        RestAssured.baseURI = super.basepath;
         RequestSpecification httprequest = RestAssured.given();
         JSONObject requestparameters = new JSONObject();
         requestparameters.put("Employee Name: ", username);

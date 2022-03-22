@@ -29,7 +29,7 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src\test\java\testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -42,7 +42,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.4.0</version>
+            <version>7.5</version>
             <scope>test</scope>
         </dependency>
 
@@ -81,6 +81,21 @@
             <artifactId>poi-ooxml</artifactId>
             <version>5.0.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.13.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.13.2</version>
+        </dependency>
+
     </dependencies>
 
 </project>

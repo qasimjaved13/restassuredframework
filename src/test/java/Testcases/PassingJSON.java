@@ -33,7 +33,7 @@ public class PassingJSON extends baseClass {
 
     @Test(dataProvider = "userdataprovide")
     public void CreateUserAPI(String payload) {
-        RestAssured.baseURI = "https://reqres.in/api";
+        RestAssured.baseURI = super.basepath;
         RequestSpecification httprequest = RestAssured.given();
         JSONObject requestparameters = new JSONObject();
         requestparameters.put("Payload: ", payload);
